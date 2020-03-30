@@ -29,12 +29,14 @@ function makeBMSTable(info, mark) {
         }
         // 本文
         var str = $("<tr class='tr_normal'></tr>");
+        /* 新規追加かどうか
         if (info[i].state == 1) {
             str = $("<tr class='tr_new'></tr>");
         }
         if (info[i].state == 2) {
             str = $("<tr class='tr_update'></tr>");
         }
+        */
         // レベル表記
         $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
         // タイトル
